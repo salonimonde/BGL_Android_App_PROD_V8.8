@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#ff4081</color>-->
+    <color name="colorPrimary">#3BA0BF</color>
+    <color name="colorPrimaryDark">#B82E5D</color>
+    <color name="colorAccent">#494949</color>
+    <color name="colorToolbar">#3BA0BF</color>
+   <!-- <color name="colorToolbar">#ff4081</color>-->
+    <color name="primary_text">#424242</color>
+    <!--<color name="colorRed">#f2335e</color>-->
+    <color name="colorRed">#3BA0BF</color>
+    <color name="colorDivider">#ababab</color>
+    <color name="colorText12">#626262</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="circle_total">#F5A44D</color>
+    <color name="yellow">#FDFD96</color>
+    <color name="circle_open">#D28B87</color>
+    <color name="circle_revisit">#7CD175</color>
+    <color name="circle_pending">#C7BAD9</color>
+    <!--<color name="colorMaroon">#9A2140</color>-->
+    <color name="colorMaroon">#187493</color>
+    <color name="transparent">#00000000</color>
+    <color name="recycler_background">#E0E0E0</color>
+    <color name="bg_consumer">#3e1c01</color>
+    <color name="black">#000000</color>
+    <color name="text_scan_status">#ea675b</color>
+    <color name="btn_confirm_blue">#3f51b5</color>
+    <color name="colorText">#424242</color>
+    <!--<color name="colorText11">#a6a6a6</color>-->
+    <color name="colorText11">#FFFFCC</color>
+    <color name="green">#5bb75e</color>
+    <color name="btn_gray">#686868</color>
+    <color name="btn_red">@color/colorPrimary</color>
+    <color name="colorBlack">#000000</color>
+    <color name="history_text_color">#f2335e</color>
+    <color name="splash_background">#C5CAE9</color>
+    <color name="background">#02a2e6</color>
+
+    <color name="background_color">#F3F3F3</color>
+    <color name="heading_color">#333333</color>
+    <color name="sub_heading_color">#949494</color>
+    <color name="text_color">#6F6F6F</color>
+
+    <color name="colorTransBlack">#CC000000</color>
+    <color name="textColorRed">#ff0000</color>
+
+</resources>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    &lt;!&ndash;<color name="colorPrimary">#ff4081</color>&ndash;&gt;
+    <color name="colorPrimary">#00786a</color>
+    <color name="colorPrimaryDark">#B82E5D</color>
+    <color name="colorAccent">#494949</color>
+    <color name="colorToolbar">#00786a</color>
+    <color name="primary_text">#424242</color>
+    <color name="colorRed">#f2335e</color>
+    <color name="colorDivider">#ababab</color>
+    <color name="colorText12">#626262</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="circle_total">#F5A44D</color>
+    <color name="circle_open">#D28B87</color>
+    <color name="circle_revisit">#7CD175</color>
+    <color name="circle_pending">#C7BAD9</color>
+    <color name="colorMaroon">#000000</color> &lt;!&ndash;Color of toolbar items&ndash;&gt;
+    <color name="transparent">#00000000</color>
+    <color name="recycler_background">#E0E0E0</color>
+    <color name="bg_consumer">#3e1c01</color>
+    <color name="black">#000000</color>
+    <color name="text_scan_status">#ea675b</color>
+    <color name="btn_confirm_blue">#3f51b5</color>
+    <color name="colorText">#424242</color>
+    <color name="colorText11">#a6a6a6</color>
+    <color name="green">#5bb75e</color>
+    <color name="btn_gray">#686868</color>
+    <color name="btn_red">@color/colorPrimary</color>
+    <color name="colorBlack">#000000</color>
+    <color name="history_text_color">#f2335e</color>
+    <color name="splash_background">#C5CAE9</color>
+
+    <color name="background_color">#F3F3F3</color>
+    <color name="heading_color">#333333</color>
+    <color name="sub_heading_color">#949494</color>
+    <color name="text_color">#6F6F6F</color>
+
+</resources>-->

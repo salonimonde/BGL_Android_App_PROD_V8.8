@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_centerInParent="true"
+    android:elevation="10dp"
+    app:cardCornerRadius="15dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="6dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPadding="10p"
+    android:background="@color/colorBlack"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/high_importance"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_dialog_with_title"
+            android:textSize="@dimen/text_xxx_large"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_x_large"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/sub_title"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="10dp"
+            android:paddingRight="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_gravity="bottom|end">
+
+            <Button
+                android:id="@+id/btn_no"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="@string/no"
+                android:background="@drawable/negative_button"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_yes"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="@string/yes"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/positive_button"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+

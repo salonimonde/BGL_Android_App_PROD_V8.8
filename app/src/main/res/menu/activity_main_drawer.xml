@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_meter_reading"
+            android:icon="@drawable/meter_reading"
+            android:title="@string/meter_reading" />
+        <item
+            android:id="@+id/nav_bill_distribution"
+            android:icon="@drawable/bill_distribution"
+            android:title="@string/bill_distribution" />
+        <item
+            android:id="@+id/nav_disconnection"
+            android:icon="@drawable/ic_action_disconnection"
+            android:title="@string/disconnection" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_action_payment"
+            android:title="@string/payment" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/log_out_icon"
+            android:title="@string/logout" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_sync"
+        android:icon="@drawable/download_from_cloud"
+        android:orderInCategory="100"
+        android:title="Sync"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/notification_icon"
+        android:orderInCategory="100"
+        android:title="Notifications"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_action_hamburger"
+        android:title="@string/bill_distribution"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+    <!--<item android:id="@+id/action_payment"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/payment"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_disconnection"
+        android:icon="@drawable/switch_icon"
+        android:title="@string/disconnection"
+        app:showAsAction="ifRoom"/>-->
+
+</menu>

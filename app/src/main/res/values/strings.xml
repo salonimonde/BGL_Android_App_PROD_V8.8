@@ -1,0 +1,799 @@
+<resources>
+    <!--<string name="app_name">SGL</string>-->
+    <string name="app_name">BGL</string>
+    <string name="title_activity_login">Sign in</string>
+    <!--<string name="google_maps_key">AIzaSyDTXmHUqYPdI9Pki8d3TOTsswiEtG1togA</string>-->
+    <string name="google_maps_key">AIzaSyBX_-wTMr8ty7InDH3JAz4ulrsmanq6ZzQ</string>
+    <string name="city_api">city</string>
+    <string name="city_name"></string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email ID/MR ID</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This MR Id  is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_empty_password">Password can not be empty.</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">Please enter valid MR id.</string>
+    <string name="error_internet_not_connected">Please Check Your Internet Connection.</string>
+    <string name="message_can_not_send_to_this_consumer">Message can\'t send to this consumer</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="please_contact_with_admin_for_password">Please contact with admin for password</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="error_in_connection">Error in connection.</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="start_meter_reading">Start Meter Reading</string>
+    <string name="summary">Summary</string>
+    <string name="profile">My Profile</string>
+    <string name="logout">Logout</string>
+    <string name="exit">Exit</string>
+    <string name="exit_message">Do you want to close this application?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_summary">My Summary</string>
+    <string name="total">Total</string>
+    <string name="today">Today</string>
+    <string name="total_assigned">Total Assigned</string>
+    <string name="open">Open</string>
+    <string name="revisit">Revisit</string>
+    <string name="pending_uploads">Pending Uploads</string>
+    <string name="my_schedule">My Schedule</string>
+    <string name="route">Route</string>
+    <string name="bharat_patil">Bharat Patil</string>
+    <string name="consumer_id">Consumer ID</string>
+    <string name="meter_no">Meter No</string>
+    <string name="meter">Meter</string>
+    <string name="dt_code">DT Code</string>
+    <string name="bill_cycle_code">Bill Cycle Code</string>
+    <string name="pole_no">Pole No</string>
+    <string name="route_id">Route ID</string>
+    <string name="phone_no">Phone No</string>
+    <string name="address">Address</string>
+    <string name="allow_to_ask_permission_again">Allow to Ask Again</string>
+    <string name="permission_rejected_already">" permission(s) were previously rejected"</string>
+    <string name="please_hold_scanner_on_qr_code">Please Hold Scanner On QR Code..</string>
+    <string name="scanning">Scanning....</string>
+    <string name="qr_scanning">QR Scanning</string>
+    <string name="scanning_failed">Scanning Failed!</string>
+    <string name="do_you_want_to_retry">Do you want to retry?</string>
+    <string name="nagpur">Nagpur</string>
+    <string name="city">City</string>
+    <string name="m412431">M412431</string>
+    <string name="mr_id">MR ID</string>
+    <string name="mr_name">Mr Name</string>
+    <string name="stopped">Stopped....</string>
+    <string name="status">Status</string>
+    <string name="scan_successful">Scan Successful</string>
+    <string name="matched">Matched</string>
+    <string name="add_as_a_new_consumer">Add as a New Consumer</string>
+    <string name="search_again_manually">Search again manually</string>
+    <string name="meter_status">Meter Status</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="is_any_suspicious_activity_found">Is any suspicious activity found?</string>
+    <string name="partial">P</string>
+    <string name="full">F</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="view">View</string>
+    <string name="reader_status">Reader Status</string>
+    <string name="validate">Validate</string>
+    <string name="name">Name</string>
+    <string name="meter_reading">Meter Reading</string>
+    <string name="add_remarks_if_any">Add Remark if any</string>
+    <string name="remark">Remark</string>
+    <string name="type_here">Type Here</string>
+    <string name="consumer_name">Consumer Name</string>
+    <string name="contract_no">Contract Id</string>
+    <string name="consumer_address">Consumer Address</string>
+    <string name="total_tasks">Total Tasks</string>
+    <string name="select_route">Select Route</string>
+    <string name="report">Report</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="change">Change</string>
+    <string name="confirm">Confirm</string>
+    <string name="total_routes_assigned">Total Routes Assigned</string>
+    <string name="completed">Completed</string>
+    <string name="add_new_consumer">Add New Consumer</string>
+    <string name="my_profile">My Profile</string>
+    <string name="select_profile_photo">Select Profile Photo</string>
+    <string name="gallery">Gallery</string>
+    <string name="er_you_havent_picked_image">You haven\'t picked Image</string>
+    <string name="er_something_wents_wrong">Something went wrong</string>
+    <string name="sync">Sync</string>
+    <string name="month">Month</string>
+    <string name="connection_type">Connection type</string>
+    <string name="consumer_email">Email Id</string>
+    <string name="er_user_not_avaliable">User not available please contact server admin!</string>
+    <string name="er_data_not_avaliable">Data not available please contact server admin!</string>
+    <string name="er_please_contact_server_admin">Your username and phone id does not match, Please contact admin.</string>
+    <string name="consumer_added_successfully">Consumer added successfully.</string>
+    <string name="login_error_101">Login failed: User ID and password doesn\'t match.</string>
+    <string name="login_error_102">Login failed: User ID is not active.</string>
+    <string name="login_error_103">Login failed: IMEI ID doesn\'t match.</string>
+    <string name="login_error_null">Login failed. Please Try Again.</string>
+
+    <string name="remove">Remove</string>
+    <string name="search">Search</string>
+    <string name="menu_Logout">Logout</string>
+    <string name="Remove">Remove</string>
+    <string name="no_internet_connection">No Internet</string>
+    <string name="search_string">Search by Consumer no, Meter no, Consumer name</string>
+    <string name="logout_string">Are you sure you want to Logout?</string>
+    <string name="No_Consumer_found">No Consumer Found.</string>
+    <string name="default_search_text">You can search by <b>Consumer Number, Meter Number, or by Consumer Name </b>  with at least <b>4</b> characters</string>
+    <string name="empty_string_err">This Meter Reading field should not be empty.</string>
+    <string name="err_meter_image_required">Please take meter picture this field should not be empty.</string>
+    <string name="take_reading">Take Reading</string>
+    <string name="blank_meter_reading_image">Please take meter reading picture.</string>
+    <string name="invalid_meter_reading">Invalid meter reading. Min 1 and Max 10 digits allowed.</string>
+    <string name="invalid_normal_meter_reading">Consumption is Negative, Please Check Current Reading.</string>
+
+    <string name="meter_reading_manual">Manual</string>
+    <string name="meter_reading_qr_code">QRCode</string>
+
+    <string name="upload_before_download_error">Please Upload readings before refreshing consumer info.</string>
+    <string name="gps_off_error">Please turn on GPS.</string>
+
+    <string name="meter_reading_not_allowed_error">Not allowed to Enter Meter Reading.</string>
+
+    <string name="meter_status_mandatory">Meter Status*</string>
+    <string name="meter_status_normal">Normal</string>
+    <string name="meter_status_faulty">Faulty</string>
+    <string name="meter_status_lock_premise">LockPremise</string>
+    <string name="meter_status_reading_overflow">ReadingOverflow</string>
+    <string name="meter_status_inaccessible">Inaccessible</string>
+    <string name="meter_status_meter_missing">Meter Missing</string>
+    <string name="addnewconsumer">New</string>
+
+    <string name="punch_rnt_readings">Click to Punch RNT Readings</string>
+    <string name="click_my_score">Click to know your Score</string>
+    <string name="please_provide_meter_status">Please provide Meter status</string>
+    <string name="please_provide_reader_status">Please provide Reader status</string>
+    <string name="one_consumer_matched">One Consumer Matched</string>
+
+    <string name="FCM_PREF">com.cesc.mrbd.fcm_pref</string>
+    <string name="FCM_TOKEN">com.cesc.mrbd.fcm_token</string>
+
+    <string name="mru_mandatory">MRU*</string>
+    <string name="cycle_mandatory">Cycle*</string>
+    <string name="bill_month_mandatory">Bill Month*</string>
+    <string name="subdivision_mandatory">Subdivision*</string>
+    <string name="portion_mandatory">Portion*</string>
+    <string name="False">False</string>
+    <string name="True">True</string>
+
+    <!--String in Toast messages starts, Piyush : 15-03-17-->
+    <string name="please_enter_valid_email_id">Please enter valid E-mail Id.</string>
+    <string name="please_enter_valid_mobile_number">Please enter valid Mobile Number.</string>
+    <string name="please_enter_consumer_name">Please enter consumer name.</string>
+    <string name="please_enter_valid_meter_number">Please enter valid meter number.</string>
+    <string name="please_enter_meter_number">Please enter meter number.</string>
+    <string name="please_enter_valid_consumer_number">Please enter valid consumer number.</string>
+    <string name="please_enter_consumer_number">Please enter consumer number.</string>
+    <string name="please_add_valid_binder">Please add valid MRU</string>
+    <string name="please_add_valid_bill_month">Please add valid Bill Month.</string>
+    <string name="please_add_valid_sub_division">Please add valid subdivision.</string>
+
+    <string name="welcome_you_have_successfully_login">Welcome, You have Successfully Login</string>
+    <string name="please_update_consumer_data_before_starting_search">Please update consumer data before starting a search. Pls press refresh button.</string>
+    <string name="please_update_consumer_data_before_start_QR_code_scan">Please update Consumer data before start QR Code scan. Pls press refresh button</string>
+    <string name="please_update_consumer_data_before_adding_new_consumer">Please update Consumer data before adding new consumer. Pls press refresh button</string>
+    <string name="no_readings_available_to_be_uploaded">No readings available to be uploaded</string>
+    <string name="consumer_readings_are_not_available_for_upload">Consumer readings are not available for upload. Please take readings before upload.</string>
+    <string name="consumer_information_downloaded">Consumer information downloaded.</string>
+    <string name="consumer_information_not_assigned_to_you_for_reading_as_of_now">Consumer information not assigned to you for reading as of now.</string>
+    <string name="updated_reassign_deassign_consumer_info_successfully">Updated Reassign/deassign Consumer info successfully.</string>
+    <string name="consumer_readings_successfully_uploaded">Consumer Readings successfully uploaded.</string>
+
+    <string name="readings_punched_successfully">Readings punched successfully.</string>
+    <string name="no_job_cards_to_punch_rnt_readings">No Job Cards to Punch RNT Readings</string>
+    <!--String in Toast messages ends, Piyush : 15-03-17-->
+
+    <!--Strings for all XML files starts, Piyush : 16-03-17-->
+    <string name="consumer_details">Consumer Details</string>
+    <string name="fill_consumer_details">Fill consumer details</string>
+    <string name="consumer_number">Consumer Number</string>
+    <string name="meter_number">Meter Number*</string>
+    <string name="consumer_name_new">Consumer Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="mobile">Mobile</string>
+    <string name="feeder_details">Feeder Details</string>
+    <string name="tag_feeder_details">Tag Feeder Details</string>
+
+    <string name="upload">Upload</string>
+
+    <string name="new_count">New</string>
+    <string name="routes">Routes</string>
+    <string name="please_contact_admin_in_case_you_are_not_able_to_login">Please contact admin in case you are not able to login</string>
+    <string name="add_reading">Add Reading</string>
+    <string name="consumer_meter_no">123456789012 | 123456789012</string>
+    <string name="meter_reading_mandatory">Meter Reading*</string>
+    <string name="update_suspicious_activity">Update Suspicious Activity</string>
+    <string name="select_language">Select Language</string>
+    <string name="observation">Observation</string>
+    <string name="update_location_guidance">Update Location Guidance</string>
+    <string name="please_enter_meter_location_guidance">Please Enter Meter Location</string>
+    <string name="notifications">Notifications</string>
+    <string name="manisha_londhe_patil">Manisha P Londhe Patil</string>
+    <string name="due_date">Due Date</string>
+
+    <string name="date">June 12,2016</string>
+    <string name="consumer_no">Consumer No.</string>
+    <string name="consumer">Consumer</string>
+    <string name="bp_no">BP No</string>
+    <string name="bp_name">BP Name</string>
+    <string name="device_no">Device No</string>
+    <string name="acc_no">Account No.</string>
+    <string name="number">54554547878232223</string>
+    <string name="small_number">5455</string>
+    <string name="notification_title">Notification Title</string>
+    <string name="notification_message">This is message body of the Notification .........</string>
+    <string name="dtc_number">DTC Number</string>
+    <string name="pole_number">Pole Number</string>
+    <string name="binder_no">Binder Number</string>
+    <string name="binder">MRU</string>
+    <string name="cyclebinder">Cycle/Binder</string>
+    <string name="cyclemru">Cycle/MRU</string>
+    <string name="ok">OK</string>
+    <string name="alert_dialog_with_title">Alert Dialog With Title</string>
+    <string name="sub_title">Sub Title</string>
+    <string name="alert_dialog_without_title">Alert Dialog Without Title</string>
+    <string name="submit_and_next">Submit and Next</string>
+    <string name="please_enter_new_pole_number">Please enter New Pole Number</string>
+    <string name="qr_code_scan">QR Code Scan</string>
+    <string name="bar_code_scan">Barcode Scan</string>
+    <string name="alert_app_ready_to_update">App is Ready to Update</string>
+
+    <string name="readings">Readings</string>
+    <string name="history">History</string>
+    <string name="english">English</string>
+    <string name="hindi">हिंदी</string>
+
+    <string name="reader_status_mandatory">Reason Code*</string>
+    <string name="reader_status_normal">Normal</string>
+    <string name="reader_status_mechanical">Mechanical</string>
+    <string name="reader_status_disconnected">Disconnected</string>
+    <string name="reader_status_shifting">Shifting</string>
+    <string name="reader_status_meter_changed">MeterChanged</string>
+    <string name="reader_status_reading_overflow">ReadingOverflow</string>
+
+    <string name="google_map">Google Map</string>
+    <string name="map_screenshot">Map ScreenShot</string>
+
+    <string name="enter_valid_mobile_no">Enter valid mobile no</string>
+    <string name="enter_valid_email_id">Enter valid email id</string>
+    <string name="exit_app">Exit App?</string>
+    <string name="do_you_want_to_exit">Do you want to exit?</string>
+    <string name="uploading_meter_readings_please_wait">Uploading meter readings, Please wait....</string>
+    <string name="uploading_new_consumer_meter_readings_please_wait">Uploading new consumer meter readings, Please wait....</string>
+    <string name="updating_your_assigned_consumer_information_please_wait">Updating your assigned consumer information, Please wait....</string>
+    <string name="updating_your_deassign_consumer_data_please_wait">Updating your Deassign Consumer data. Please wait....</string>
+    <string name="your_consumer_data_is_not_ready_please_try_after_sometime">Your Consumer data is not ready. Please try after sometime..</string>
+    <string name="logging_in_please_wait">Logging in, please wait...</string>
+    <string name="are_you_sure">Are you Sure?</string>
+    <string name="want_to_make_reading_as_rnt">Want to make reading as RNT</string>
+    <string name="please_wait">Please wait...........</string>
+    <string name="rescan">Rescan</string>
+    <string name="back">Back</string>
+    <string name="qr_code_successfully_scanned_consumer_info_not_found_do_you_want_to_add_new_consumer">QRCode successfully scanned, consumer info not found, Do you want to add new consumer?</string>
+    <string name="invalid_qr_code_do_you_want_to_rescan">Invalid QRCode, Do you want to rescan?</string>
+    <string name="record_found">record found</string>
+    <string name="records_found">records found</string>
+    <string name="please_enter_meter_reading">Please enter meter reading</string>
+    <string name="pole_number_colon">Pole number:</string>
+    <string name="my_score">My Score</string>
+    <string name="score">999999</string>
+    <string name="great_you_have_Scored">Great You Have Scored</string>
+    <string name="error">error</string>
+    <string name="success">success</string>
+    <string name="location_settings_unavailable_please_change_manually">Location settings unavailable, Please change manually.</string>
+    <string name="please_contact_server_admin">Please Contact Server Admin</string>
+    <string name="passed">Pass</string>
+    <string name="revisited">Revisit</string>
+    <string name="readings_submitted_successfully">Readings Submitted Successfully</string>
+    <string name="more_than_average_readings">More Than Average Readings</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+
+    <string name="update_meter_indexing">Update Meter Indexing</string>
+    <string name="update_mobile_number">Update Mobile Number</string>
+    <string name="kvah_reading">KVAH Reading</string>
+    <string name="kwh_reading">SCM Reading*</string>  <!--changed for BGL (HYD/VJD/KKD)   original KWH-->
+    <string name="kva">KVA Reading</string>
+    <string name="submit">Submit</string>
+    <string name="please_enter_panel_no">Meter number</string>
+    <string name="kw">KW Reading</string>
+    <string name="pf">PF Reading</string>
+
+    <string name="reading_mandatory">Reading*</string>
+    <string name="please_enter_reading"> Please Enter Reading</string>
+
+    <string name="crn_no">CRN No.</string>
+
+    <string name="reading_date">Reading Date</string>
+    <string name="reading">SCM Reading</string>
+    <string name="please_provide_meter_reading">Please provide meter reading</string>
+    <string name="error_in_upload">Unable to Upload MeterReading Please Contact Server Admin</string>
+
+    <string name="reading_normal">Reading</string>
+
+    <string name="meter_type">Update Meter Type</string>
+    <string name="rf">RF</string>
+    <string name="digital">Digital</string>
+    <string name="analog">Analog</string>
+    <string name="old_type">Old Type</string>
+
+    <string name="update_meter_type">Update Meter Type</string>
+    <string name="please_select_above_category">Please select above category</string>
+    <string name="negative_consumption">Negative Consumption</string>
+    <string name="is_premises_in_use">Is premises in use?</string>
+    <string name="please_provide_reason_code">Please provide Reason Code</string>
+    <string name="please_provide_suspicious_meter_image">Please provide Suspicious Meter Image</string>
+    <string name="please_add_valid_cycle">Please add valid Cycle</string>
+    <string name="please_add_valid_zone">Please add valid Zone</string>
+
+    <string name="meter_dead_stopped">Meter Dead Stopped</string>
+    <string name="reading_not_taken">Reading Not Taken</string>
+    <string name="body_seal_broken">Body Seal Broken</string>
+    <string name="do_you_want_to_accept_this">Do you want to accept this reading?</string>
+
+    <string name="please_re_enter_kwh_reading">Please Re-enter SCM Reading</string>  <!--changed for BGL (HYD/VJD/KKD)   original KWH-->
+    <string name="please_re_enter_reading">Please Re-enter Reading</string>
+
+    <string name="tag_binder_details">Tag MRU Details</string>
+    <string name="binder_details">MRU Details</string>
+    <string name="meter_location_not_available">Meter Lat Long are not available</string>
+    <string name="abnormal_reading">Abnormal Reading</string>
+    <string name="please_add_mobile_number">Please add mobile number</string>
+    <string name="please_add_meter_number">Please add meter number</string>
+    <string name="please_add_mobile_number_error">Mobile Number Field Required</string>
+    <string name="select_image_remark">Select Image Remark*</string>
+    <string name="readable">Readable</string>
+    <string name="non_readable">Non Readable</string>
+    <string name="please_select_meter_image_remark">Please select meter image remark</string>
+
+    <string name="please_enter_kwh_reading">Please enter SCM Reading</string>  <!--changed for BGL (HYD/VJD/KKD)   original KWH-->
+    <string name="kwh_reading_does_not_matched">SCM Reading does not matched</string>  <!--changed for BGL (HYD/VJD/KKD)   original KWH-->
+
+
+    <string name="reading_does_not_match">Reading does not match</string>
+
+
+
+    <string name="pass"><b>Pass :</b> If a reading uploaded by MR get accepted in Validation and sent for upload then, MR gets <b>3 points</b> for the <b>Pass</b> reading.\n\n<b>Fail :</b> If a reading uploaded by MR get rejected in validation and sent for revisit then, <b>2 points</b> will be deducted for the <b>Revisit</b> reading from the total score of MR.\n\n<b>Readings submitted :</b> If a reading is completed and uploaded by MR then, MR gets <b>1 point</b> for the <b>Reading Submitted.</b>(Readings Not Taken will not be considered as completed readings)\n\n<b>More than average :</b> If MR takes readings more than the average readings i.e. <b>200 readings per day</b> then, MR will get <b>1.5 points</b> for submission of each Completed reading after 200 readings.\n\n<b>Total :</b> This is the total score after calculations, on the basis of readings taken by that MR.</string>
+
+    <string name="binders">MRU</string>
+    <string name="search_text_no">You can search by <b>CRN Number, Meter Number and Account Number</b>  with at least <b>4</b> characters</string>
+    <string name="search_text_name">You can search by <b>Consumer and Street Name</b>  with at least <b>4</b> characters</string>
+    <string name="enter_meter_number">Add Meter Number</string>
+    <string name="filter">Apply Filter</string>
+    <string name="apply">Apply</string>
+    <string name="select_binder">Select MRU</string>
+    <string name="please_select_valid_binder">Please select valid MRU</string>
+    <string name="please_update_consumer_data_before_start_filter">Please update Consumer data before start filtering. Pls press refresh button</string>
+    <string name="only_one_binder_is_assign_to_you">Only one MRU is assigned to you.Can\'t filter data</string>
+    <string name="bill_distribution_screen">Bill Distribution Screen</string>
+    <string name="landing_screen">Landing Screen</string>
+    <string name="login_screen">Login Screen</string>
+    <string name="sub_division_name">Portion</string>
+    <string name="cycle">Cycle</string>
+    <string name="cycle_no">21</string>
+    <string name="consumers">Consumers</string>
+    <string name="end_date">End Date</string>
+    <string name="distributed">Distributed</string>
+    <string name="bill_month">Bill Month</string>
+    <string name="colon">:</string>
+    <string name="is_completed">Distributed</string>
+    <string name="bill_distribution">Bill Distribution</string>
+    <string name="please_add_total_bill_distributed">Please Add Total Bill Distributed</string>
+    <string name="please_add_remark">Please Add Remark</string>
+    <string name="please_enter_valid_count">Please Enter Valid Consumer Count </string>
+    <string name="job_card_searching_for">JobCard Searching For MRU</string>
+    <string name="title_activity_payment_details">PaymentDetailsActivity</string>
+    <string name="meter_current_less_than_previous">Current Less Than Previous</string>
+    <string name="title_activity_google_maps">Map</string>
+
+    <string name="payment">Payment</string>
+    <string name="disconnection">Disconnection</string>
+    <string name="disconnection_notice">Disconnection Notice</string>
+    <string name="this_device_is_not_supported">This device is not supported.</string>
+    <string name="dc_notice_no">DC Notice Number</string>
+    <string name="please_provide_delivery_status">Please provide Delivery Status</string>
+    <string name="please_provide_delivery_remark">Please provide Delivery Remark</string>
+    <string name="disconnection_notice_data_saved_successfully">Disconnection Notice data saved successfully</string>
+    <string name="failed_to_save_data">Failed to save Data</string>
+    <string name="uploading_disconnection_notices_please_wait">Uploading Disconnection Notices , Please wait....</string>
+
+    <string name="delivery_status_mandatory">Delivery Status*</string>
+    <string name="delivery_remark_mandatory">Delivery Remark*</string>
+    <string name="delivery_remark">Delivery Remark</string>
+    <string name="delivery_status">Delivery Status</string>
+    <string name="delivered">Delivered</string>
+    <string name="not_delivered">Not Delivered</string>
+    <string name="successfully">Successfully</string>
+    <string name="refused">Refused</string>
+    <string name="all">All</string>
+    <string name="pattern">{0}</string>
+
+    <string name="actMain_device_info">%1$s</string>
+    <string name="bonded">Bonded</string>
+    <string name="nothing">Nothing</string>
+    <string name="connecting">Connecting</string>
+    <string name="unknown_response_from_device">Unknown Response from Device</string>
+    <string name="device_not_connected">Device not connected</string>
+    <string name="platen_open">Platen open</string>
+    <string name="paper_out">Paper out</string>
+    <string name="print_failed">Print failed</string>
+    <string name="no_response_from_pride_device">No response from Pride device</string>
+    <string name="not_supported">Not Supported</string>
+    <string name="select_device">Select Device</string>
+    <string name="device_not_found">Device not found</string>
+    <string name="bluetooth_not_start">Bluetooth not start</string>
+    <string name="select_type_of_printer">Select type of Printer</string>
+    <string name="evolute_printer">Evolute Printer</string>
+    <string name="regular_printer">Regular Printer</string>
+
+    <string name="spot_bill_screen">Spot Bill Screen</string>
+    <string name="warning"><b>Warning!!</b></string>
+    <string name="do_you_really_want_to_close_spot_bill_page">Do you really want to close <i>Spot Bill</i> page</string>
+    <string name="no_bluetooth_adapter_available">No bluetooth adapter available</string>
+    <string name="bluetooth_device_found">Bluetooth device found</string>
+    <string name="bluetooth_opened">Bluetooth Opened</string>
+    <string name="printer_name">BTprinter0100</string>
+    <string name="text_pair">Pair</string>
+    <string name="print">Print</string>
+    <string name="text_list_devices">Devices List</string>
+    <string name="pairing">Pairing...</string>
+    <string name="paired">Paired</string>
+    <string name="unpaired">Unpaired</string>
+    <string name="printing">Printing...</string>
+    <string name="bluetooth_feature_not_supported">Bluetooth feature not supported</string>
+    <string name="checking_bt_connection">Establishing Bluetooth Connection, Please Wait</string>
+    <string name="please_select_bluetooth_printer_to_print">Please select Bluetooth Printer to Print</string>
+    <string name="print_spot_bill_start">\n******* MVVL SPOT BILL *******\n\n</string>
+    <string name="print_spot_end">\n\n--------------------------------\n</string>
+    <string name="print_spot_payment_start">\n*** MVVL SPOT BILL PAYMENT ***\n\n</string>
+    <string name="error_while_connecting_device">Error while connecting device</string>
+
+
+    <string name="printing_matter">
+        **** SGL SPOT BILL ****\n\n
+
+        BP No. : 123456789\n\n
+
+        Bill Id : 789456132\n\n
+
+        Name : Bynry\n\n
+
+        Current Read Date : 09/04/2018\n\n
+
+        Previous Read Date : 09/03/2018\n\n
+
+        Current Reading : 1234\n\n
+
+        Previous Reading : 1000\n\n
+
+        Billing Units : 234\n\n
+
+        Bill Days : 15\n\n
+
+        Energy Charges : 50\n\n
+
+        Fixed Charges : 200\n\n
+
+        Arrears : 12\n\n
+
+        Net Bill : 250\n\n
+
+        Bill Month : 201803\n\n
+
+        ***********************\n\n
+        \n
+
+    </string>
+
+    <!--Messages For Blank Screen starts-->
+    <string name="no_consumers_are_assigned_to_you">No Consumers are assigned to you</string>
+    <string name="no_readings_taken">No Readings Taken</string>
+    <string name="no_summary_available">No Summary Available</string>
+    <string name="no_notice_are_distributed">No Notice are Distributed</string>
+    <string name="no_history_available">No History Available</string>
+    <string name="no_bills_are_distributed">No Bills are Distributed</string>
+    <string name="your_payment_detail_is_not_ready_please_contact_to_supervisor">Your Payment Detail Is Not Ready. Please Contact To Supervisor</string>
+    <string name="downloading_payment_details_please_wait">Downloading payment details, please wait....</string>
+    <string name="saving_data">Saving Data, Please Wait....</string>
+
+    <string name="sd_amount">SD Amount</string>
+    <string name="ex_sd_amount">Ex. SD Amount</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="collect_cheque">Collect Cheque</string>
+    <string name="cheque_collection">Cheque Collection</string>
+    <string name="cheque_no_mandatory">Cheque Number*</string>
+    <string name="cheque_no">Cheque Number</string>
+    <string name="cheque_amount_mandatory">Cheque Amount*</string>
+    <string name="cheque_amount">Cheque Amount</string>
+    <string name="enter_cheque_amount">Enter Cheque Amount</string>
+    <string name="enter_cheque_number">Enter Cheque Number</string>
+    <string name="take_cheque_image">Take Cheque Image</string>
+
+    <string name="this_consumer_already_present">This Consumer Already Present</string>
+    <string name="your_payment_detail_is_not_ready_please_contact_to_super_visior">Your Payment Detail Is Not Ready. Please Contact To Super-visior</string>
+
+    <string name="dummy_address">RAJNEESH KUMAR VERMA  B Flat 24 3rd Floor LOKMANYA COLONY GREEN FIELD PHASE III  SHIVTIRTH NAGAR,SHIKSHAK NAGAR LANE NO-8 KOTHRUD PUNE 411038</string>
+
+    <string name="not_subscribed">Not\nSubscribed</string>
+
+    <!--Messages For Blank Screen ends-->
+
+    <!--Strings for all XML files ends, Piyush : 16-03-17-->
+
+    <string-array name="Route">
+        <item>Select Route</item>
+        <item>All</item>
+        <item>1234</item>
+        <item>2345</item>
+        <item>3456</item>
+        <item>4567</item>
+    </string-array>
+
+    <string name="premises_locked">Premises Locked</string>
+    <string name="site_not_found">Site Not Found</string>
+
+    <string name="normal">Normal</string>
+    <string name="actual_reading">Actual Reading</string>
+    <string name="meter_number_mismatch">Meter Number Mismatch</string>
+    <string name="meter_change">Meter Change</string>
+    <string name="bad_display">Bad Display</string>
+    <string name="gas_not_in_use">Gas Not in Use</string>
+
+    <string name="meter_faulty">Faulty</string>
+    <string name="meter_defective">Meter Defective</string>
+    <string name="meter_damaged">Meter Damaged</string>
+    <string name="pipeline_leakage">Pipeline Leakage</string>
+    <string name="_meter_faulty">Meter Faulty</string>
+
+
+    <string name="rcnt">RCNT</string>
+    <string name="door_lock">Door Lock</string>
+    <string name="temporary_disconnected">Temporary Disconnected</string>
+    <string name="permanently_locked">Permanently Locked</string>
+    <string name="not_legible">Not Legible</string>
+
+    <string name="door_locked">Door Locked</string>
+    <string name="permanantly_locked">Permanantly Locked</string>
+    <string name="address_not_found">Address Not Found</string>
+    <string name="consumer_refused">Consumer Refused</string>
+    <string name="no_connection">No Connection</string>
+    <string name="meter_not_installed">Meter Not Installed</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="permanently_disconnected">Permanently Disconnected</string>
+
+
+    <string name="accept">Accept</string>
+
+    <string-array name="update_meter_status_all">
+        <item>@string/meter_status_mandatory</item>
+        <item>@string/normal</item>
+        <item>@string/meter_status_faulty</item>
+        <item>@string/rcnt</item>
+    </string-array>
+
+    <string-array name="reader_status">
+        <item>@string/reader_status_mandatory</item>
+    </string-array>
+
+    <string-array name="reader_status_normal">
+        <item>@string/reader_status_mandatory</item>
+        <!--<item>@string/actual_reading</item>
+        <item>@string/meter_number_mismatch</item>
+        <item>@string/meter_change</item>
+        <item>@string/gas_not_in_use</item>-->
+
+        <item>@string/actual_reading</item>
+        <item>@string/meter_number_mismatch</item>
+        <!--<item>@string/meter_change</item>-->
+        <item>@string/gas_not_in_use</item>
+
+    </string-array>
+
+    <string-array name="array_reader_actual_reading">
+        <item>@string/reader_status_mandatory</item>
+        <item>@string/actual_reading</item>
+    </string-array>
+
+    <string-array name="array_reader_status_meter_mismatch">
+        <item>@string/reader_status_mandatory</item>
+        <item>@string/actual_reading</item>
+        <item>@string/meter_number_mismatch</item>
+    </string-array>
+
+    <string-array name="reader_status_faulty">
+        <!--<item>@string/reader_status_mandatory</item>
+        <item>@string/meter_defective</item>
+        <item>@string/meter_damaged</item>
+        <item>@string/pipeline_leakage</item>
+        <item>@string/bad_display</item>-->
+        <item>@string/reader_status_mandatory</item>
+        <item>@string/_meter_faulty</item>
+    </string-array>
+
+    <string-array name="meter_status_faulty">
+        <!--<item>@string/reader_status_mandatory</item>
+        <item>@string/meter_defective</item>
+        <item>@string/meter_damaged</item>
+        <item>@string/pipeline_leakage</item>
+        <item>@string/bad_display</item>-->
+        <item>@string/reader_status_mandatory</item>
+        <item>@string/_meter_faulty</item>
+    </string-array>
+
+    <string-array name="reader_status_rcnt">
+        <!--<item>@string/reader_status_mandatory</item>
+        <item>@string/door_lock</item>
+        <item>@string/temporary_disconnected</item>
+        <item>@string/permanently_locked</item>
+        <item>@string/not_legible</item>-->
+
+        <item>@string/reader_status_mandatory</item>
+        <!--<item>@string/door_lock</item>
+        <item>@string/temporary_disconnected</item>
+        <item>@string/permanently_locked</item>
+        <item>@string/not_legible</item>-->
+        <item>@string/door_lock</item>
+        <item>@string/permanently_locked</item>
+        <item>@string/address_not_found</item>
+        <item>@string/consumer_refused</item>
+        <item>@string/no_connection</item>
+        <item>@string/meter_not_installed</item>
+        <item>@string/disconnected</item>
+        <item>@string/permanently_disconnected</item>
+    </string-array>
+
+    <string-array name="update_meter_status_without_rcnt">
+        <item>@string/meter_status_mandatory</item>
+        <item>@string/normal</item>
+        <item>@string/meter_status_faulty</item>
+    </string-array>
+
+    <string-array name="meter_type">
+        <item>@string/meter_type</item>
+        <item>@string/rf</item>
+        <item>@string/digital</item>
+        <item>@string/analog</item>
+        <item>@string/old_type</item>
+    </string-array>
+
+    <array name="delivery_status">
+        <item>@string/delivery_status_mandatory</item>
+        <item>@string/delivered</item>
+        <item>@string/not_delivered</item>
+    </array>
+
+    <array name="delivery_remark_default">
+        <item>@string/delivery_remark_mandatory</item>
+    </array>
+
+    <array name="delivery_remark_delivered">
+        <item>@string/delivery_remark_mandatory</item>
+        <item>@string/successfully</item>
+    </array>
+
+    <array name="reader_status_normal_dialog">
+        <item>@string/meter_current_less_than_previous</item>
+    </array>
+
+
+
+    <array name="delivery_remark_not_delivered">
+        <item>@string/delivery_remark_mandatory</item>
+        <item>@string/premises_locked</item>
+        <item>@string/site_not_found</item>
+        <item>@string/refused</item>
+    </array>
+
+    <string name="do_you_want_to_print_bill">Do You Want To Print Bill ? </string>
+
+    <string name="going_back_will_cancel_your_spot_billing_process_do_you_still_want_to_go_back">
+        Going Back Will Cancel your Spot Billing Process. Do You Still Want to Go Back?
+    </string>
+
+
+    <string name="spot_bill_generated_successfully">Spot Bill Generated Successfully.</string>
+
+
+    <string name="consumer_no_api">consumer_no</string>
+    <string name="reading_month">reading_month</string>
+    <string name="is_spot_billing">is_spot_billing</string>
+    <string name="job_card_id">job_card_id</string>
+    <string name="route_api">route</string>
+
+
+
+    <string name="getting_spot_bill_data_please_wait">Receiving Spot Bill Data, Please wait....</string>
+
+
+
+    <string name="your_spot_bill_data_is_currently_unavailable_please_contact_server_admin">
+        Your Spot Bill Data is Currently Unavailable, Please Contact Server Admin....
+    </string>
+
+    <string name="spot_bill_dialog">Spot Bill Dialog</string>
+
+    <string name="unable_to_complete_spot_bill_process_please_upload_readings_manually_from_readings_tab">
+        Unable To Complete Spot Bill Process. Please Upload Readings Manually From Readings Tab..
+    </string>
+    <string name="version">Version</string>
+
+    <string name="mobile_no">mobile_no</string>
+
+    <string name="consumer_name_api">consumer_name</string>
+    <string name="reading_date_api">reading_date</string>
+    <string name="reader_status_api">reader_status</string>
+    <string name="meter_status_api">meter_status</string>
+    <string name="meter_reader_name">meter_reader_name</string>
+    <string name="meter_reading_api">meter_reading</string>
+    <string name="meter_no_api">meter_no</string>
+
+
+
+    <string name="previous_sequence">previous_sequence</string>
+    <string name="revisit_flag">revisit_flag</string>
+    <string name="is_revisit">IS_REVISIT</string>
+    <string name="invoice_no">Invoice No</string>
+    <string name="price_rs_scm">Price(RS/SCM)</string>
+    <string name="previous_read_date">Previous Reading | Date</string>
+    <string name="current_reading_date">Current Reading | Date</string>
+    <string name="current_reading">Current Reading</string>
+    <string name="previous_reading">Previous Reading</string>
+    <string name="consumption">Consumption</string>
+    <string name="bill_days">Bill Days</string>
+    <string name="current_charges_rs">Current Charges(Rs)</string>
+    <string name="current_emi">Current EMI</string>
+    <string name="arrears">Arrears</string>
+    <string name="total_charges_before_due_date">Total Charges(Before Due Date)</string>
+    <string name="penalty_charges">Penalty Charges</string>
+    <string name="total_charges_after_due_date">Total Charges(After Due Date)</string>
+    <string name="consumption_charges">Consumption Charges</string>
+    <string name="previous_due">Previous Due</string>
+    <string name="payments">Payments</string>
+    <string name="emi_security_deposite">EMI Security Deposit</string>
+    <string name="amount_before_due">Amount Before Due</string>
+    <string name="amount_after_due">Amount After Due</string>
+    <string name="current_charges">Current Charges</string>
+    <string name="bill_type">Bill Type</string>
+    <string name="bold_fields_are_to_be_written_on_bill">* Enter the following fields on the bill.</string>
+    <string name="gas_units_consumed_days">Gas Units Consumed | Days</string>
+    <string name="amount_due_after">Amount Due After</string>
+    <string name="amount_due_before">Amount Due Before</string>
+
+
+    <string name="is_consumer_name_correct">Is Consumer\'s Name Correct ?</string>
+    <string name="is_consumer_address_correct">Is Consumer\'s Address Correct ?</string>
+    <string name="is_consumer_meter_no_correct">Is Consumer\'s Meter Number Correct ?</string>
+    <string name="is_consumer_mobile_no_correct">Is the Consumer\'s Mobile Number Correct ?</string>
+
+
+    <string name="please_enter_name">Please Enter Name</string>
+    <string name="please_enter_address">Please Enter Address</string>
+    <string name="please_enter_meter_no">Please Enter Meter Number</string>
+    <string name="please_enter_mobile_no">Please Enter Mobile Number</string>
+    <string name="update">Update</string>
+
+
+    <string name="consumer_name_value">Consumer Name :</string>
+    <string name="consumer_address_value">Consumer Address :</string>
+    <string name="meter_no_value">Meter No :</string>
+    <string name="mobile_no_value">Mobile No :</string>
+    <string name="android_id">Your Android ID</string>
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "945152032394",
+    "firebase_url": "https://sgl-mrbd.firebaseio.com",
+    "project_id": "sgl-mrbd",
+    "storage_bucket": "sgl-mrbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945152032394:android:1d3981273f60862a",
+        "android_client_info": {
+          "package_name": "com.sgl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945152032394-mq5envdorr7jm6go0at981014o9lcl0s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sgl",
+            "certificate_hash": "dd4fc73b6120fd4045948821e34d9d4e5870a9b6"
+          }
+        },
+        {
+          "client_id": "945152032394-o8k6fulmsik0moui4s4hsrjrd3p3qsgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmEI29DuWzkp4ulnzsTP9wNzGtL-RkJwY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945152032394-o8k6fulmsik0moui4s4hsrjrd3p3qsgp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

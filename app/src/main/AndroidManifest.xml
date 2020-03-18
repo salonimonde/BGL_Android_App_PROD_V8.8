@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sgl">
+
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_CACHE"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- For MAP starts -->
+    <permission
+        android:name="info.sgl.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="info.sgl.googlemapsv2.permission.MAPS_RECEIVE" />
+    <!-- For MAP ends -->
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".utils.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/bgl_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <!-- Providers -->
+        <provider
+            android:name=".db.DatabaseProvider"
+            android:authorities="com.sgl" />
+        <!-- Receivers -->
+
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="022186b0a98af053d9f09ffea01f003d206002ef" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <!-- Google Map key starts -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!-- Google Map key ends -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+
+        <service android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/bgl_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <!-- Activity -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.AddNewConsumerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UnBillMeterReadingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PaymentDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LandingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoogleMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BillDistributionLandingScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BillDistributionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DisconnectionNoticeLandingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddMeterReadingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DisconnectionNoticeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EvoluteBTDiscovery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SpotBillActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activity.SpotBillNPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DeviceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChequeCollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchStreetWiseActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

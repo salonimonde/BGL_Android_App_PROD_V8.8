@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:id="@+id/relative_main">
+
+    <RelativeLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorToolbar"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_back" />
+
+                    <TextView
+                        android:id="@+id/title_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/search"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_h4" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/img_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/colorWhite"
+                        android:src="@drawable/ic_action_search" />
+
+                    <EditText
+                        android:id="@+id/edt_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_toEndOf="@+id/img_search"
+                        android:layout_toLeftOf="@+id/img_close"
+                        android:layout_toRightOf="@+id/img_search"
+                        android:layout_toStartOf="@+id/img_close"
+                        android:background="@color/colorWhite"
+                        android:hint="@string/search_string"
+                        android:imeOptions="actionSearch"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/text_color"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_change"
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/colorWhite"
+                        android:src="@drawable/ic_action_add_consumer" />
+
+                    <ImageView
+                        android:id="@+id/img_close"
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/colorWhite"
+                        android:src="@drawable/ic_action_add_consumer" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/txt_result_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:padding="10dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/search_text_no"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_x_large" />
+
+        <ImageView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/keyboard"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_x_large"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:id="@+id/relative_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorMaroon"
+                android:weightSum="2"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/edt_meter_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:layout_gravity="center"
+                    android:text="@string/job_card_searching_for"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_large"
+                    android:layout_marginLeft="10dp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_binder"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0.7"
+                    android:layout_gravity="center"
+                    android:background="@color/background_color"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_searched_job_cards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_layout"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:scrollbars="vertical"
+        android:tag="sticky"/>
+
+</RelativeLayout>

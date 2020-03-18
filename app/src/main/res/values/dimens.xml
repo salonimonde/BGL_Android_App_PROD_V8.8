@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">192dp</dimen>
+    <dimen name="fab_margin">5dp</dimen>
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">70dp</dimen>
+
+    <dimen name="margin_tiny">2dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_medium">10dp</dimen>
+    <dimen name="margin_large">15dp</dimen>
+    <dimen name="margin_x_large">20dp</dimen>
+    <dimen name="margin_xx_large">30dp</dimen>
+    <dimen name="button_text_size_medium">15sp</dimen>
+    <dimen name="button_text_size_small">12sp</dimen>
+    <dimen name="button_text_size_large">18sp</dimen>
+    <dimen name="edit_text_size_medium">14sp</dimen>
+    <dimen name="text_size_h1">22sp</dimen>
+    <dimen name="text_size_h2">20sp</dimen>
+    <dimen name="text_size_h3">19sp</dimen>
+    <dimen name="text_size_h4">16sp</dimen>
+    <dimen name="text_size_h5_1">15sp</dimen>
+    <dimen name="text_size_h5">14sp</dimen>
+    <dimen name="text_size_h6">12sp</dimen>
+    <dimen name="text_extra_small">11sp</dimen>
+
+    <!--Piyush : 02-03-17 -->
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_large">14sp</dimen>
+    <dimen name="text_x_large">16sp</dimen>
+    <dimen name="text_xx_large">18sp</dimen>
+    <dimen name="text_xxx_large">20sp</dimen>
+    <!--Piyush : 02-03-17 -->
+
+    <dimen name="text_not_subscribed">50sp</dimen>
+    <dimen name="design_navigation_icon_size"
+        tools:override="true">25dp</dimen>
+
+</resources>

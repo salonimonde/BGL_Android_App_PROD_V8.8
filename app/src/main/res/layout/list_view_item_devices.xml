@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/device_item_ble_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="device_item_ble_name"
+            android:textSize="@dimen/text_size_h1"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAC: "
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_h4"/>
+
+            <TextView
+                android:id="@+id/device_item_ble_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="device_item_ble_mac"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_h4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="CoD: "
+                android:textColor="#000000"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/device_item_ble_cod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="device_item_ble_cod"
+                android:textColor="#000000"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Device Type: "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/device_item_ble_device_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="device_item_ble_device_type"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="RSSI"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/device_item_ble_rssi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="-30"
+            android:textColor="#000000"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/device_item_ble_bond"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

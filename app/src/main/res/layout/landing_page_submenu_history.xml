@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main.framelayout.title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center_horizontal"
+    android:background="#00ffffff"
+    android:orientation="vertical"
+    app:layout_collapseMode="parallax"
+    app:layout_collapseParallaxMultiplier="0.3"
+    tools:showIn="@layout/activity_landing">
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/open_history"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ripple_oval_maroon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textSize="@dimen/text_size_h5_1"
+                    android:padding="0dp"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/tv_open_history"
+                    android:textSize="@dimen/text_size_h5"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/meter_status_normal"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/revisit_history"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ripple_oval_maroon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:textSize="@dimen/text_size_h5_1"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/tv_revisit_history"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textSize="@dimen/text_size_h5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/revisit"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/unbill_history"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ripple_oval_maroon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:textSize="@dimen/text_size_h5_1"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/tv_unbill_history"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textSize="@dimen/text_size_h5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/new_count"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

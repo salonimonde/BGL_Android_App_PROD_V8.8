@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorToolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-15dp"
+                    android:src="@drawable/ic_action_back" />
+
+                <TextView
+                    android:id="@+id/title_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/add_new_consumer"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_h4" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_layout"
+        android:background="@color/background_color"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/ly1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/consumer_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="@string/consumer_details"
+                    android:textColor="@color/heading_color"
+                    android:textSize="@dimen/text_xx_large"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/consumer_details_sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="2dp"
+                    android:text="@string/fill_consumer_details"
+                    android:textColor="@color/sub_heading_color"
+                    android:textSize="@dimen/text_large" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edt_consumer_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_background_2"
+                            android:hint="@string/crn_no"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_large" />
+
+                        <TextView
+                            android:id="@+id/til_consumer_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Consumer Number*"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/text_x_large"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/til_meter_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Meter Number*"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/text_x_large"
+                            android:visibility="gone" />
+
+                        <!-- <EditText
+                            android:id="@+id/edt_meter_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_background_2"
+                            android:inputType="text"
+                            android:textColor="@color/text_color"
+                            android:hint="Meter Number*"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:layout_marginLeft="2dp"
+                            android:maxLength="20"
+                            android:textSize="@dimen/text_large" />-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_meter_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/text_background_2"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789"
+                    android:hint="@string/device_no"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_large" />
+
+                <TextView
+                    android:id="@+id/til_consumer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Consumer Name*"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_x_large"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_consumer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/text_background_2"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:hint="@string/consumer_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_large" />
+
+                <TextView
+                    android:id="@+id/til_phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_x_large"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/text_background_2"
+                    android:hint="@string/mobile_number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_large" />
+
+                <TextView
+                    android:id="@+id/til_consumer_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email Id"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_x_large"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_consumer_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/text_background_2"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 . @ "
+                    android:hint="@string/consumer_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_large" />
+
+                <TextView
+                    android:id="@+id/til_consumer_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789"
+                    android:text="@string/address"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_x_large"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_consumer_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/text_background_2"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 "
+                    android:hint="@string/address"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_large" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/feeder_delaits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="2dp"
+                        android:text="@string/binder_details"
+                        android:textColor="@color/heading_color"
+                        android:textSize="@dimen/text_xx_large"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/feeder_delaits_sub_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="2dp"
+                        android:text="@string/tag_binder_details"
+                        android:textColor="@color/sub_heading_color"
+                        android:textSize="@dimen/text_large" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/edt_bill_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorWhite"
+                            android:paddingLeft="8dp"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/edt_zone_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorWhite"
+                            android:paddingLeft="8dp"
+                            android:spinnerMode="dropdown" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/edt_bill_cycle_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/colorWhite"
+                            android:paddingLeft="8dp"
+                            android:spinnerMode="dropdown" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/til_pole_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pole Number"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/text_x_large"
+                            android:visibility="gone" />
+
+                        <Spinner
+                            android:id="@+id/edt_route_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:background="@color/colorWhite"
+                            android:paddingLeft="8dp"
+                            android:spinnerMode="dropdown" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_pole_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/text_background_2"
+                    android:hint="@string/pole_no"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_large"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_add_task_reading"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/margin_x_large"
+        android:background="@drawable/button"
+        android:text="@string/take_reading"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_x_large" />
+
+</android.support.design.widget.CoordinatorLayout>

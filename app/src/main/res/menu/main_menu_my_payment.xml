@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_bank_info"
+        android:icon="@drawable/ic_action_bankinfo"
+        android:orderInCategory="100"
+        android:title="Notifications"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_drawer"
+        android:icon="@drawable/ic_action_hamburger"
+        android:title="@string/bill_distribution"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+</menu>

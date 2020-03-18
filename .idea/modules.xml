@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BGL_Android_App(Due_amount).iml" filepath="$PROJECT_DIR$/BGL_Android_App(Due_amount).iml" group="BGL_Android_App(Due_amount)" />
+      <module fileurl="file://$PROJECT_DIR$/ProwessPride_V1.12/ProwessPride_V1.12.iml" filepath="$PROJECT_DIR$/ProwessPride_V1.12/ProwessPride_V1.12.iml" group="BGL_Android_App(Due_amount)/ProwessPride_V1.12" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="BGL_Android_App(Due_amount)/app" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/text_background_2">
+
+
+        <TextView
+            android:id="@+id/lbl_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_background_2"
+            android:hint="Amount"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_large" />
+
+        <TextView
+            android:id="@+id/txt_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_background_2"
+            android:hint="None"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_background_2">
+            <TextView
+                android:id="@+id/lbl_distributed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_background_2"
+                android:hint="Distributed"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_large" />
+
+            <TextView
+                android:id="@+id/txt_distributed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_distributed"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/text_background_2"
+                android:hint="none"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_large" />
+            <TextView
+                android:id="@+id/lbl_binder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_distributed"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="18dp"
+                android:hint="Binders Assigned"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_large" />
+
+
+            <TextView
+                android:id="@+id/txt_binder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_binder"
+                android:layout_marginLeft="5dp"
+                android:hint="none"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_large" />
+
+            <TextView
+                android:id="@+id/lbl_consumers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_rate"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="15dp"
+                android:hint="Consumers"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_large" />
+
+
+            <TextView
+                android:id="@+id/txt_consumers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_consumers"
+                android:layout_marginLeft="200dp"
+                android:hint="none"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_large" />
+
+            <TextView
+                android:id="@+id/lbl_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="10dp"
+                android:hint="Rate"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_large" />
+
+
+            <TextView
+                android:id="@+id/txt_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_rate"
+                android:layout_marginLeft="200dp"
+                android:hint="none"
+                android:padding="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_large" />
+        </RelativeLayout>
+
+</LinearLayout>

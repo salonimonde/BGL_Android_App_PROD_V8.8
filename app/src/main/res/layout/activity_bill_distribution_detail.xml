@@ -1,0 +1,418 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3.5">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/ic_action_back" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-15dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:freezesText="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:text="@string/bill_distribution"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_x_large" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/lbl_bill_month"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/text_background_2"
+                        android:hint="@string/bill_month"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/text_background_2"
+                        android:hint="@string/colon"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:id="@+id/txt_bill_month"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:background="@drawable/text_background_2"
+                        android:hint="@string/reading_mandatory"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/text_background_2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/lbl_sub_division_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:hint="@string/sub_division_name"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:hint="@string/colon"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:id="@+id/txt_sub_division_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:hint="@string/reading_mandatory"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/text_background_2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/lbl_cycle_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:hint="@string/cycle"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:hint="@string/colon"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:id="@+id/txt_cycle_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:hint="@string/reading_mandatory"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/lbl_binder_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/text_background_2"
+                        android:hint="@string/binder"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/text_background_2"
+                        android:hint="@string/colon"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:id="@+id/txt_binder_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:background="@drawable/text_background_2"
+                        android:hint="@string/reading_mandatory"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/lbl_consumers"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/text_background_2"
+                        android:hint="@string/consumers"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/text_background_2"
+                        android:hint="@string/colon"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:id="@+id/txt_consumers"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:background="@drawable/text_background_2"
+                        android:hint="@string/reading_mandatory"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/lbl_consumers_recevied"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/text_background_2"
+                        android:hint="Bill Received"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/text_background_2"
+                        android:hint="@string/colon"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:id="@+id/txt_consumers_recevied"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:background="@drawable/text_background_2"
+                        android:hint="@string/reading_mandatory"
+                        android:padding="15dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_is_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="@string/is_completed"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_large" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_yesno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_toRightOf="@+id/txt_is_completed"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/full"
+                            android:textColor="@color/text_color" />
+
+                        <RadioButton
+                            android:id="@+id/radio_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/partial"
+                            android:textColor="@color/text_color" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edt_distributed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/text_background_2"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/distributed"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_large" />
+
+                <EditText
+                    android:id="@+id/edt_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="80dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/text_background_2"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 "
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/remark"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_large" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_x_large" />
+
+</android.support.design.widget.CoordinatorLayout>
